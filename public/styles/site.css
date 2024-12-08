@@ -1,0 +1,570 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: black;
+}
+
+.title{
+    margin-left: 20px;
+}
+
+.home-title{
+    color: rgba(120, 39, 230, 0.7);
+    font-size: 60px;
+    margin-left: 40px;
+    margin-top: 10px;
+    box-shadow: 0 0 20px rgba(217, 190, 255, 0.7);
+    border-radius: 20px;
+}
+
+header {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.login-logo {
+    max-width: 50px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    margin-top: -20px;
+    margin-right: -20px;
+}
+
+.login-logo:hover {
+    filter: grayscale(100%);
+}
+
+nav {
+    font-size: 30px;
+    padding-left: 5px;
+    margin-left: -10px;
+}
+
+.tile {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(202, 132, 255);
+    padding: 10px 20px;
+    display: inline-block;
+    position: relative;
+}
+
+.active a,
+a:hover {
+    color: #666666;
+}
+
+.login-text {
+    position: absolute;
+    top: 60px;
+    right: 41px;
+    font-size: 20px;
+    color: rgb(227, 227, 227);
+}
+
+.home_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    /* margin-top: -40px; */
+}
+
+aside {
+    background-color: rgb(66, 66, 66);
+    color: rgb(227, 227, 227);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 40px;
+    min-width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(120, 19, 202, 0.7);
+    /* text-align:center; */
+}
+
+.admin{
+    background-color: rgb(66, 66, 66);
+    color: rgb(227, 227, 227);
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 0px;
+    margin-left: 40px;
+    min-width: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(120, 19, 202, 0.7);
+    /* text-align:center; */
+}
+
+aside a{
+    color: rgb(210, 151, 255);
+    font-size: 20px;
+}
+
+/* home-aside{
+    margin-top:30px;
+} */
+
+/* article {
+    display: flex;
+    flex-direction: row;
+} */
+
+.filter-by {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.song-column{
+    margin-left: -30px;
+}
+
+.tile-info-leftmost{
+    margin-left: -30px;
+    width: 117px;
+    color: white;
+}
+
+/* .edit-entry-col{
+    /* margin-left: -40px; */
+    /* width:100%; */
+/* } */
+
+
+.song-tile-container {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.song-tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    background-color: #000;
+    border: 2px solid rgba(120, 39, 230);
+    width: 250px;
+}
+
+.song-tile:hover {
+    box-shadow: 0 0 40px rgba(133, 59, 235, 0.8);
+}
+
+.admin-song-tile:hover {
+    box-shadow: 0 0 25px rgba(132, 64, 226, 0.8);
+}
+
+.album-cover {
+    width: 200px;
+    height: 200px;
+    /* margin-bottom: 15px; */
+    border-radius: 15px;
+}
+
+.details-album-cover {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 15px;
+    margin-left: -40px;
+    border-radius: 15px;
+}
+
+.song-name {
+    font-size: 24px;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+.song-genre {
+    font-size: 18px;
+    color: #ccc;
+    margin-left: 20px;
+    background-color: rgba(120, 39, 230, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 70px;
+}
+
+.song-genre-home {
+    font-size: 18px;
+    color: #ccc;
+    background-color: rgba(120, 39, 230, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+    max-width: 70px;
+}
+
+.song-artist {
+    font-size: 18px;
+    color: #ccc;
+}
+
+.citation {
+    color: white;
+    font-size: 10px;
+}
+
+.filter-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.admin-song-tile{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap:10px;
+    text-align: center;
+    align-items: center;
+    /* border-bottom: 5px solid transparent; */
+    /* background-image: linear-gradient(to right, #2d2d2d, #2e2e2e, #000000); */
+    background-image: linear-gradient(to right, #2d2d2d, #000000);
+    /* background-origin: border-box; */
+    /* background-clip: content-box, border-box; */
+    border-radius: 15px;
+    margin-left:20px;
+    width:98%;
+    /* margin-right: 30px; */
+    /* margin-left: 0px; */
+    margin-bottom: 20px;
+}
+.admin-song-tile-link{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    gap:10px;
+    text-align: center;
+    align-items: center;
+    /* border-bottom: 5px solid transparent; */
+    /* background-image: linear-gradient(to right, #2d2d2d, #000000); */
+    /* background-origin: border-box; */
+    /* background-clip: content-box, border-box; */
+    border-radius: 15px;
+    margin-left:20px;
+    width:100%;
+    margin-right: 30px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+.leftmost{
+    padding-left:20px;
+}
+.admin-column-titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* gap:50px; */
+    padding-top:150px;
+    margin-top:-10px;
+    background-color:#000;
+    padding-left:100px;
+    margin-right:40px;
+    margin-left: 10px;
+    top:0px;
+    /* left:200px; */
+    z-index:100;
+    position:fixed;
+    margin-bottom: 20px;
+    width: 70%;
+    /* width: 100%; */
+    /* padding-left:50px; */
+}
+.album-cover-title{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.admin-column-titles h4 {
+    text-align: center;
+    width: 90px;
+    padding-left: 10px;
+    margin-left:20px;
+    margin: 0;
+    width:90px;
+
+}
+
+.genre-col-title{
+    margin-left: 5px;
+}
+.admin-album-cover{
+    margin-right: -30px;
+}
+
+.song-details-container {
+    display: flex;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+.left-column {
+    margin-right: 20px;
+}
+
+
+.cover {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    box-shadow: 0 0 40px rgba(120, 39, 230, 0.7);
+    margin-left: -40px;
+}
+
+
+.right-column {
+    flex-grow: 1;
+}
+
+
+.name {
+    font-size: 70px;
+}
+
+
+.artist {
+    font-size: 40px;
+}
+.album, .year {
+    font-size: 30px;
+}
+
+
+.lyrics {
+    margin-top: 20px;
+    max-width: 300px;
+}
+
+.song-details-button :hover {
+    color: white;
+}
+
+.back-button{
+    max-width: 50px;
+    margin-left: -10px;
+    filter: grayscale(40%);
+}
+
+.lyrics-details{
+    color: white;
+    justify-content: center;
+    margin: auto;
+    max-width: 300px;
+}
+.tile-info{
+    width:120px;
+    padding-left:5px;
+    color: white;
+
+}
+
+.consumer-home{
+    position: absolute;
+    top: 15px;
+    right: -45px;
+    font-size: 15px;
+    color: rgba(120, 39, 230);
+    z-index: 2000;
+}
+
+.edit-logo{
+    max-width: 40px;
+}
+
+/* .edit-entry-text{
+    text-align: center;
+} */
+.label-input{
+    width: 250px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    overflow: visible;
+}
+textarea{
+    height:200px;
+    width: 150px;
+    left:20px;
+}
+form{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:400px;
+}
+.align-right{
+    margin-left:160px;
+}
+button{
+    background-color:#7827e6;
+    color: white;
+    border-radius: 15px;
+    width:90px;
+    height:30px;
+}
+
+.genres{
+    display:flex;
+    flex-direction: column;
+    padding-right:10px;
+    padding-left:20px;
+}
+
+/* form on home page CSS */
+section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 450px;
+    padding: 20px;
+    background-color:  rgb(49, 49, 49);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /**source: https://www.w3schools.com/cssref/css3_pr_box-shadow.php*/
+    text-align: left;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.label-input {
+    margin-bottom: 15px;
+}
+
+.label-input label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.feedback {
+    color: rgb(202, 132, 255);
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0.5em;
+    margin-bottom: -0.25em;
+}
+
+.hidden{
+    display: none;
+}
+
+.text-area{
+    margin-left: 60px;
+}
+
+.add-song-page {
+    margin-top: 30px;
+}
+
+.confirmation-message{
+    display: block;
+    margin: auto;
+    margin-top: 250px;
+}
+
+.add-song-home{
+   margin-right: 20px;
+   font-size: 25px;
+   margin-top: -30px;
+}
+
+.add-song a{
+    margin-bottom:0px;
+    margin-left: 27px;
+}
+
+
+.nav-bar-admin{
+    display: flex;
+    flex-direction: row;
+}
+.show-lyrics-col{
+    margin-left: 30px;
+    margin-top: 80px;
+}
+
+.edit-title{
+    text-align: center;
+    margin-bottom: 60px;
+    color: #7827e6;
+}
+
+.period{
+    color: #000;
+    cursor: default;
+    padding:0px;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+.login-form{
+    margin-top: 100px;
+    text-align: center;
+    padding-top:40px;
+    padding-bottom:40px;
+    width:350px;
+}
+.login-form .label-input{
+    display:flex;
+    flex-direction:column;
+    margin-bottom: 30px;
+    text-align:left;
+    gap:10px;
+}
+.login{
+    width:300px;
+}
+
+.centerWords{
+    text-align: center;
+    margin-top: 100px;
+}
+.marginNeg{
+    margin-top: 20px;
+}
+
+.success{
+    margin-bottom: 60px;
+}
+
+.continueHome{
+    margin-left: 50px;
+}
+
+.nameWelcome{
+    font-size: 15px;
+    margin-left: 20px;
+}
