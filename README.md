@@ -64,6 +64,6 @@ For detailed information about the design process and decisions, see the [design
 
 ## Contributors
 
-Zhalae Daneshvari
-Sophia Hertel
+* Zhalae Daneshvari
+* Sophia Hertel
 
